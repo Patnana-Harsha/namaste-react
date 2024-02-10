@@ -47,8 +47,8 @@ render() {
         
 const {name, location, avatar_url,url} = this.state.userInfo; 
         return(
-            <div >
-                <img src={avatar_url} className="rounded-[250px] ml-[35vw]  " />
+            <div className="center" >
+                <img src={avatar_url} className="rounded-[250px] ml-[35vw]" />
                 <h1>Name:{name}, Mechanical Engineer</h1>
                 <h2>Location: {location}</h2>
                 <h3>Contact: {url} </h3>

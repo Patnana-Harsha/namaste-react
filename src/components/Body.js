@@ -49,7 +49,7 @@ const Body = () => {
   if(onlineStatus === false) return(<h1>You are offline, please check your internet connection</h1>)
 
   
-  return listOfRestaurants.length === 0 ?(
+  return listOfRestaurants?.length === 0 ?(
   <Shimmer />
   ) : (
     <div className="body">
@@ -64,8 +64,8 @@ const Body = () => {
         <button
           className="m-2 px-4 py-0.5 bg-black text-white rounded-2xl"
           onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (restaurant) => restaurant.info.avgRating > 4
+            const filteredList = listOfRestaurants?.filter(
+              (restaurant) => restaurant?.info?.avgRating > 4
             );
             setFilteredRestaurant(filteredList);
           }}
@@ -83,7 +83,7 @@ const Body = () => {
           />
           <button className="px-4 py-1.5 bg-green-100 m-4 rounded-2xl"
             onClick={() => {
-              const filteredRestaurant = listOfRestaurants.filter(
+              const filteredRestaurant = listOfRestaurants?.filter(
                 (restaurant) =>
                   restaurant.info.name
                     .toLowerCase()
