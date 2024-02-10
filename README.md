@@ -29,3 +29,29 @@ in package.json file-
            "browserslist":[
             "last 2 versions"
            ]
+# Food ordering app
+/* 
+* Header
+* -Logo
+* -Nav-items
+* Body
+*  -Search
+*  -RestaurantContainer
+*    -ReastaurantCard 
+* Footer
+* -Copyright
+* -Links
+* -Address
+* -Contact
+*/
+
+# Two types of Export/Import
+
+- Default Export/Import
+export default component;
+import component from "path";
+
+- Named Export/Import
+export const Component;
+import {Component} from "path";
+
